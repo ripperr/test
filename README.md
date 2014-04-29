@@ -1,8 +1,3 @@
-Mobile Mon application in Phonegap with JQuery Mobile
-=====================================================
-This guide explains how to run this phonegap application in Ubuntu/Debian, Mac os X and on the phonegap.com website.
-
-
 #Building on phonegap.com#
 ##Notes
 For phonegap to build for iOS, you have to create a certificate.
@@ -60,25 +55,7 @@ Finally, run the following commands in the project folder:
 ```bash
 phonegap run android
 ```
-##Installing and removing plugins
-Installing a plugin:
 
-```bash
-phonegap local plugin add [url of your plugin].git
-```
-Removing a plugin:
-
-```bash
-phonegap plugin remove [package name of your plugin]
-```
-##Folder structure
-
-| Folders       | Content       			    |
-| ------------- |:-----------------------------------------:| 
-| /merges     	| Is used to merge/override the /www folder | 
-| /platforms    | Is automatically populated with code if you compile for a specific platform(android,iOS)      |
-| /plugins      | Contains added plugins     |
-| /www	        | HTML, CSS and JavaScript code has to be placed here   | 
 
 ##Known issues
 ###Plugin issues
@@ -106,9 +83,33 @@ phonegap local plugin add https://github.com/phonegap-build/PushPlugin.git
 
 phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-network-information.git
 ```
+
+
+#Installing and removing plugins
+Installing a plugin:
+
+```bash
+phonegap local plugin add [url of your plugin].git
+```
+Removing a plugin:
+
+```bash
+phonegap plugin remove [package name of your plugin]
+```
+
+#Folder structure
+
+| Folders       | Content       			    |
+| ------------- |:-----------------------------------------:| 
+| /merges     	| Is used to merge/override the /www folder | 
+| /platforms    | Is automatically populated with code if you compile for a specific platform(android,iOS)      |
+| /plugins      | Contains added plugins     |
+| /www	        | HTML, CSS and JavaScript code has to be placed here   | 
+
 #Pushnotifications
 In the following paragraphs you can find instructions on how to configure to Google Cloud Message for Android and 
 Apple Push Notifications for iOS.
+
 ##Google Cloud Message(GCM)
 In this section you can find detailed instructions on how to configure Google Cloud Messaging(GCM) for Phonegap from scratch. Google Cloud Message allows you to send pushnotifications to Android devices.
 ###Creating a Google API project
